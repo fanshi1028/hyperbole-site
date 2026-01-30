@@ -32,11 +32,14 @@
                 ver = "0.6.0";
                 sha256 = "sha256-9kJhNbqN20SYfqdRoeDzdus8DXxka5Gqu5oWyhUgmHY=";
               } { };
-              atomic-css = hself.callHackageDirect {
-                pkg = "atomic-css";
-                ver = "0.2.0";
-                sha256 = "sha256-16vwXrrWJm2zIKUDbhjpYOJA/vK9zXM6Qm1rd/x0PYg=";
-              } { };
+              atomic-css = pkgs.haskell.lib.donCheck (
+                hself.callHackageDirect {
+                  pkg = "atomic-css";
+                  ver = "0.2.0";
+                  sha256 = "sha256-16vwXrrWJm2zIKUDbhjpYOJA/vK9zXM6Qm1rd/x0PYg=";
+                } { }
+              );
+
               skeletest = hself.callHackageDirect {
                 pkg = "skeletest";
                 ver = "0.3.2";
