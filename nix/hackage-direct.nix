@@ -68,4 +68,10 @@ hself: hsuper: {
     sha256 = "sha256-zVgLI6zt0FPFzRiey3wG6NLOT08ENDIweAUDyj0n1YU=";
   } { };
 
+  base16 = hself.callHackageDirect {
+    pkg = "base16";
+    ver = "1.0";
+    sha256 = "sha256-pLnipLnF7YuQvCwgw7Lp7sbwhab63sdEpubeSpaoEmY=";
+  } { };
+
 }
