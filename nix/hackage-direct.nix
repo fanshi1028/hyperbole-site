@@ -72,6 +72,10 @@ hself: hsuper: {
     pkg = "base16";
     ver = "1.0";
     sha256 = "sha256-pLnipLnF7YuQvCwgw7Lp7sbwhab63sdEpubeSpaoEmY=";
+    rev = {
+      revision = "4";
+      sha256 = "sha256-TdNBIoFo8s3gOVTdchde5yagcT4iAPbHtz9M2NIgc3c=";
+    };
   } { };
 
 }
