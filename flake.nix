@@ -27,11 +27,13 @@
           default = hsPkgs.developPackage {
             root = ./.;
             overrides = hself: hsuper: {
+
               hyperbole = hself.callHackageDirect {
                 pkg = "hyperbole";
                 ver = "0.6.0";
                 sha256 = "sha256-9kJhNbqN20SYfqdRoeDzdus8DXxka5Gqu5oWyhUgmHY=";
               } { };
+
               atomic-css = pkgs.haskell.lib.donCheck (
                 hself.callHackageDirect {
                   pkg = "atomic-css";
