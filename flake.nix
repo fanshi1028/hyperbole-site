@@ -65,6 +65,12 @@
                 ver = "1.0.2";
                 sha256 = "sha256-fRxDSt8/CSGyUrmGNwF22ASjEzIRGifNk3M9j9HrC2g=";
               } { };
+
+              data-default = hself.callHackageDirect {
+                pkg = "data-default";
+                ver = "0.8.0.2";
+                sha256 = "sha256-u3ida68KfdhGpHs4LiStuv49lsffxypf15dYYIHYcd4=";
+              } { };
             };
             modifier =
               drv:
