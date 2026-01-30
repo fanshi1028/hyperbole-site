@@ -34,7 +34,7 @@
                 sha256 = "sha256-9kJhNbqN20SYfqdRoeDzdus8DXxka5Gqu5oWyhUgmHY=";
               } { };
 
-              atomic-css = pkgs.haskell.lib.donCheck (
+              atomic-css = pkgs.haskell.lib.dontCheck (
                 hself.callHackageDirect {
                   pkg = "atomic-css";
                   ver = "0.2.0";
