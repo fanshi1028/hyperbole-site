@@ -44,4 +44,10 @@ hself: hsuper: {
     sha256 = "sha256-u3ida68KfdhGpHs4LiStuv49lsffxypf15dYYIHYcd4=";
   } { };
 
+  tls = hself.callHackageDirect {
+    pkg = "tls";
+    ver = "2.2.1";
+    sha256 = "sha256-XrksEXOsZDF+jn/rI5m2F+fIu05zCPcO5CZRXFNoeJY=";
+  } { };
+
 }
