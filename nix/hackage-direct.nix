@@ -50,4 +50,22 @@ hself: hsuper: {
     sha256 = "sha256-XrksEXOsZDF+jn/rI5m2F+fIu05zCPcO5CZRXFNoeJY=";
   } { };
 
+  crypton-asn1-encoding = hself.callHackageDirect {
+    pkg = "crypton-asn1-encoding";
+    ver = "0.10.0";
+    sha256 = "sha256-dTP26qiOVnAb5XO/gibuG1rYI03vDTpBr6+L79PsjEA=";
+  } { };
+
+  crypton-asn1-types = hself.callHackageDirect {
+    pkg = "crypton-asn1-types";
+    ver = "0.4.1";
+    sha256 = "sha256-+mjsNBKhhxFrNmCCMLPsugzlz/61Glqw8hKoYndy+wc=";
+  } { };
+
+  time-hourglass = hself.callHackageDirect {
+    pkg = "time-hourglass";
+    ver = "0.3.0";
+    sha256 = "sha256-zVgLI6zt0FPFzRiey3wG6NLOT08ENDIweAUDyj0n1YU=";
+  } { };
+
 }
