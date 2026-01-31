@@ -78,4 +78,34 @@ hself: hsuper: {
     };
   } { };
 
+  crypton-x509 = hself.callHackageDirect {
+    pkg = "crypton-x509";
+    ver = "1.8.0";
+    sha256 = "sha256-wxU8Ou52UCuCT2gbxqPKssteIVGUyg5WEbv1xRIyZTg=";
+  } { };
+
+  crypton-x509-store = hself.callHackageDirect {
+    pkg = "crypton-x509-store";
+    ver = "1.8.0";
+    sha256 = "sha256-U6DH5Ke3JXAzZuqxLM6mPKDxqj4HTf5kjoBXaerLOcc=";
+  } { };
+
+  crypton-x509-validation = hself.callHackageDirect {
+    pkg = "crypton-x509-validation";
+    ver = "1.8.0";
+    sha256 = "sha256-CyRqTUOcUzzVlQfTd3yylwDVtOaumBbBg9hMyvtcu7c=";
+  } { };
+
+  crypton-pem = hself.callHackageDirect {
+    pkg = "crypton-pem";
+    ver = "0.3.0";
+    sha256 = "sha256-RBQdPqN/UJw+9FU/HAh5wR5S69WOfllnWAs/mpegbK8=";
+  } { };
+
+  crypton-asn1-parse = hself.callHackageDirect {
+    pkg = "crypton-asn1-parse";
+    ver = "0.10.0";
+    sha256 = "sha256-awY6Rk3LBgOZk9xEKGlPWtYYD8OiKAskN26otBbVXjc=";
+  } { };
+
 }
