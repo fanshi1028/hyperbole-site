@@ -108,21 +108,21 @@ hself: hsuper: {
     sha256 = "sha256-awY6Rk3LBgOZk9xEKGlPWtYYD8OiKAskN26otBbVXjc=";
   } { };
 
-  # crypton-connection = hself.callHackageDirect {
-  #   pkg = "crypton-connection";
-  #   ver = "0.4.5";
-  #   sha256 = "sha256-jMlB4MhiH320pJzKvp5JQTOX1Q/yMH9LiX6TyWzJvtA=";
-  #   rev = {
-  #     revision = "1";
-  #     sha256 = "sha256-Uh1h/WsOUo/RxTRHVwDKOmBhi21LW8eYx6s9FhsKrhE=";
-  #   };
-  # } { };
+  crypton-connection = hself.callHackageDirect {
+    pkg = "crypton-connection";
+    ver = "0.4.5";
+    sha256 = "sha256-jMlB4MhiH320pJzKvp5JQTOX1Q/yMH9LiX6TyWzJvtA=";
+    rev = {
+      revision = "1";
+      sha256 = "sha256-Uh1h/WsOUo/RxTRHVwDKOmBhi21LW8eYx6s9FhsKrhE=";
+    };
+  } { };
 
-  # crypton-socks = hself.callHackageDirect {
-  #   pkg = "crypton-socks";
-  #   ver = "0.6.2";
-  #   sha256 = "sha256-m24YfeXYEq+xJwmqviEXgo/oMQwiWsVEAoDVNkKDerE=";
-  # } { };
+  crypton-socks = hself.callHackageDirect {
+    pkg = "crypton-socks";
+    ver = "0.6.2";
+    sha256 = "sha256-m24YfeXYEq+xJwmqviEXgo/oMQwiWsVEAoDVNkKDerE=";
+  } { };
 
   # warp-tls = hself.callHackageDirect {
   #   pkg = "warp-tls";
