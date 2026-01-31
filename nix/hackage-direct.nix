@@ -130,7 +130,7 @@ hself: hsuper: {
     sha256 = "sha256-Uo+kbz9aT4Sz5JLV3HxIyY+ZK35+zkJLJghcGJpH1VM=";
     rev = {
       revision = "1";
-      sha256 = "sha256-Uo+kbz9aT4Sz5JLV3HxIyY+ZK35+zkJLJghcGJpH1VM=";
+      sha256 = "sha256-fdw/+YfDixAmbS3dr4hqoRFX+NHuAYnPiaWwOULCpSU=";
     };
   } { };
 
