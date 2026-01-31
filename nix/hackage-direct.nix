@@ -108,4 +108,10 @@ hself: hsuper: {
     sha256 = "sha256-awY6Rk3LBgOZk9xEKGlPWtYYD8OiKAskN26otBbVXjc=";
   } { };
 
+  crypton-connection = hself.callHackageDirect {
+    pkg = "crypton-connection";
+    ver = "0.4.5";
+    sha256 = "sha256-jMlB4MhiH320pJzKvp5JQTOX1Q/yMH9LiX6TyWzJvtA=";
+  } { };
+
 }
