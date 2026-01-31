@@ -26,7 +26,9 @@
         {
           default = hsPkgs.developPackage {
             root = ./.;
-            overrides = pkgs.callPackage ./nix/hackage-direct.nix { };
+            overrides =
+              hself: hsuper:
+              (pkgs.callPackage ./nix/hackage-direct.nix { } hself hsuper) // { hoogle = hsPkgs.hoogle; };
             modifier =
               drv:
               pkgs.lib.pipe drv (
@@ -54,7 +56,6 @@
                   ))
                 ]
               );
-            withHoogle = false;
             returnShellEnv = true;
           };
         }

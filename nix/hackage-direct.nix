@@ -124,14 +124,4 @@ hself: hsuper: {
     sha256 = "sha256-m24YfeXYEq+xJwmqviEXgo/oMQwiWsVEAoDVNkKDerE=";
   } { };
 
-  # warp-tls = hself.callHackageDirect {
-  #   pkg = "warp-tls";
-  #   ver = "3.4.13";
-  #   sha256 = "sha256-Uo+kbz9aT4Sz5JLV3HxIyY+ZK35+zkJLJghcGJpH1VM=";
-  #   rev = {
-  #     revision = "1";
-  #     sha256 = "sha256-fdw/+YfDixAmbS3dr4hqoRFX+NHuAYnPiaWwOULCpSU=";
-  #   };
-  # } { };
-
 }
