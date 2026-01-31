@@ -54,6 +54,7 @@
                   ))
                 ]
               );
+            withHoogle = false;
             returnShellEnv = true;
           };
         }
