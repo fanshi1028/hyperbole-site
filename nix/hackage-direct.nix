@@ -114,4 +114,10 @@ hself: hsuper: {
     sha256 = "sha256-jMlB4MhiH320pJzKvp5JQTOX1Q/yMH9LiX6TyWzJvtA=";
   } { };
 
+  crypton-socks = hself.callHackageDirect {
+    pkg = "crypton-socks";
+    ver = "0.6.2";
+    sha256 = "sha256-m24YfeXYEq+xJwmqviEXgo/oMQwiWsVEAoDVNkKDerE=";
+  } { };
+
 }
