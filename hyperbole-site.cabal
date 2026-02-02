@@ -1,26 +1,35 @@
-cabal-version:      3.0
-name:               hyperbole-site
-version:            0.1.0.0
+cabal-version: 3.0
+name: hyperbole-site
+version: 0.1.0.0
 -- synopsis:
 -- description:
-license:            MIT
-license-file:       LICENSE
-author:             fanshi1028
-maintainer:         fanshi1028@proton.me
+license: MIT
+license-file: LICENSE
+author: fanshi1028
+maintainer: fanshi1028@proton.me
 -- copyright:
-category:           Web
-build-type:         Simple
-extra-doc-files:    CHANGELOG.md
--- extra-source-files:
+category: Web
+build-type: Simple
+extra-doc-files: CHANGELOG.md
 
+-- extra-source-files:
 common warnings
-    ghc-options: -Wall
+  ghc-options: -Wall
 
 executable hyperbole-site
-    import:           warnings
-    main-is:          Main.hs
-    -- other-modules:
-    -- other-extensions:
-    build-depends:    base ^>=4.21.0.0, hyperbole
-    hs-source-dirs:   app
-    default-language: GHC2024
+  import: warnings
+  main-is: Main.hs
+  -- cabal-gild: discover app --exclude=*/Main.hs
+  other-modules:
+
+  -- other-extensions:
+  build-depends:
+    atomic-css,
+    base ^>=4.21.0.0,
+    hyperbole,
+    text,
+    text-short,
+    wai-middleware-static,
+
+  hs-source-dirs: app
+  default-language: GHC2024
