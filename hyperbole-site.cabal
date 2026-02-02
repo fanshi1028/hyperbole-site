@@ -29,6 +29,7 @@ executable hyperbole-site
     hyperbole,
     text,
     text-short,
+    validation-selective,
     wai-middleware-static,
 
   hs-source-dirs: app
