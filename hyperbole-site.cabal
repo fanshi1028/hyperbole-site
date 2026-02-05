@@ -21,11 +21,15 @@ executable hyperbole-site
   main-is: Main.hs
   -- cabal-gild: discover app --exclude=*/Main.hs
   other-modules:
+    TodoList
+    TodoList.Data
 
   -- other-extensions:
   build-depends:
+    aeson,
     atomic-css,
     base ^>=4.21.0.0,
+    containers,
     hyperbole,
     text,
     text-short,
